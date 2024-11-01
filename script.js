@@ -55,16 +55,13 @@ function validarEmail() {
 
 
     if (!email.includes('@')) {
-        console.log("No tiene arrona");
         document.getElementById('email_error').innerHTML = "El correo debe contener el carácter '@'.";
         return false;
     }
 
     // Verificar que haya una parte antes y después del '@'
     else {
-        console.log("Contiene arrobba");
         const partes = email.split('@');
-        // console.log(partes);
         const dominioPartes = partes[1].split('.');
 
         if (partes.length !== 2 || partes[0] === '' || partes[1] === '') {
@@ -125,14 +122,26 @@ function validar_mensaje() {
     }
 }
 
-function enviar_mensaje() {
-    let nombre = document.getElementById('nombre').value;
-    let asunto = document.getElementById('asunto').value;
-    let mensaje = document.getElementById('mensaje').value;
-    let email = document.getElementById('email').value;
+(function () {
+    emailjs.init("VxOsSMsVA7iPO1GUZ");
+})();
 
-    alert("Se envió su mensaje");
+function enviar_mensaje(event) {
+    event.preventDefault(); // Evita el envío del formulario de forma predeterminada
+
+    const form = document.getElementById('contactForm');
+
+    emailjs.sendForm('service_heyncdp', 'template_zmmmenw', form)
+        .then(function (response) {
+            alert('Mensaje enviado con éxito.');
+            console.log("Success: " + response);
+            form.reset(); // Limpia el formulario
+        }, function (error) {
+            alert('Hubo un problema al enviar el mensaje. Intenta de nuevo más tarde.');
+            console.error("Error: " + error);
+        });
 }
+
 
 // function copiar(texto) {
 //     navigator.clipboard.writeText(texto).then(function () {
@@ -171,3 +180,15 @@ function copiar(resultado) {
     document.body.removeChild(tempTextArea);
     alert("Se copió " + resultado);
 }
+
+const elements = document.querySelectorAll('.sobre-mi, .habilidades, .proyecto, .contact');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+        }
+    });
+});
+
+elements.forEach(element => observer.observe(element));

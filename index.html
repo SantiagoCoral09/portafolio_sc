@@ -11,6 +11,10 @@
     <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
 </head>
 
 <body>
@@ -65,10 +69,10 @@
 
     <!-- Sección de presentación -->
     <section class="presentacion padding__lados">
-        <div class="column">
-            <h1>Bienvenido a mi portafolio, soy Santiago Coral, desarrollador web</h1>
-            <p class="margin__top__bottom">Soy egresado de la Universidad de Nariño, apasionado por la programación y la
-                creación de contenido atractivo. Actualmente participo en el proyecto Oracle ONE de Alura Latam.</p>
+        <div class="column presentacion__info"><br>
+            <h1>Bienvenido a mi portafolio, soy Santiago Coral, desarrollador web</h1><br>
+            <p class="">Soy egresado de la Universidad de Nariño, apasionado por la programación y la
+                creación de contenido atractivo. Actualmente participo en el proyecto Oracle ONE de Alura Latam.</p><br>
             <ul class="row presentacion__links">
                 <li class="column">
                     <a href="https://github.com/SantiagoCoral09" target="_blank"
@@ -103,8 +107,8 @@
 
     <!-- Sección sobre mí -->
     <section class="sobre-mi padding__lados" id="sobreMi">
-        <div class="column about margin__top__bottom">
-            <h2 class="">Sobre mí</h2>
+        <div class="column about">
+            <h2 class="">Sobre mí</h2><br>
             <p>Ingeniero de sistemas egresado de la Universidad de Nariño con una pasión por la innovación y resolución
                 de problemas tecnológicos.
                 Busco una oportunidad laboral donde pueda aplicar los conocimientos adquiridos en mi formación
@@ -114,31 +118,33 @@
                 lógica y las matemáticas.</p>
         </div>
 
-        <div class="column datos-personales margin__top__bottom">
-            <h2 class="">Datos Personales:</h2>
-            <address>
-                <ul>
-                    <li><strong>Nombre:</strong> Santiago Alejandro Coral Ruano</li>
-                    <li><strong>Ubicación:</strong> Potosí, Nariño, Colombia</li>
-                    <li><strong>Fecha de nacimiento:</strong> 09/05/1999</li>
-                    <li><strong>Email:</strong> <a class="datos_copiar"
-                            href="mailto:santiagocoral80@gmail.com">santiagocoral80@gmail.com</a>&nbsp;
-                        <button class="btn_copiar" id="botonCopiar_email"
-                            onclick="copiar('santiagocoral80@gmail.com')"><img src="assets/copy.svg" alt="Copiar"
-                                style="width: 16px; height: 16px;"></button>
-                    </li>
-                    <li><strong>Teléfono:</strong> <a class="datos_copiar" id="botonCopiar_cel"
-                            href="tel:+573166542501">3166542501</a>&nbsp;<button class="btn_copiar"
-                            onclick="copiar('3166542501')"><img src="assets/copy.svg" alt="Copiar"
-                                style="width: 16px; height: 16px;"></button></li>
-                </ul>
-            </address>
+        <div class="column datos-personales" id="datos">
+            <div class="datos-personales-container">
+                <h2 class="">Datos Personales:</h2>
+                <address>
+                    <ul>
+                        <li><strong>Nombre:</strong> Santiago Alejandro Coral Ruano</li>
+                        <li><strong>Ubicación:</strong> Potosí, Nariño, Colombia</li>
+                        <li><strong>Fecha de nacimiento:</strong> 09/05/1999</li>
+                        <li class="email"><strong>Email:</strong><a class="datos_copiar"
+                                href="mailto:santiagocoral80@gmail.com">santiagocoral80@gmail.com</a>
+                            <button class="btn_copiar" id="botonCopiar_email"
+                                onclick="copiar('santiagocoral80@gmail.com')"><img src="assets/copy.svg" alt="Copiar"
+                                    style="width: 16px; height: 16px;"></button>
+                        </li>
+                        <li><strong>Teléfono:</strong> <a class="datos_copiar" id="botonCopiar_cel"
+                                href="tel:+573166542501">3166542501</a>&nbsp;<button class="btn_copiar"
+                                onclick="copiar('3166542501')"><img src="assets/copy.svg" alt="Copiar"
+                                    style="width: 16px; height: 16px;"></button></li>
+                    </ul>
+                </address>
+            </div>
         </div>
     </section>
 
     <!-- Sección de habilidades: Skills -->
-    <section id="skills" class="habilidades margin__top__bottom padding__lados">
-        <h2 class="margin__top__bottom">Habilidades</h2>
+    <section id="skills" class="habilidades  padding__lados">
+        <h2 class="">Habilidades</h2><br>
         <ul class="skills">
             <li class="skill">
                 <figure>
@@ -185,47 +191,58 @@
     </section>
 
     <!-- Sección de hobbies, pasatiempos, aficiones -->
-    <section id="hobbies" class="habilidades margin__top__bottom padding__lados">
-        <h2 class="margin__top__bottom">Aficiones</h2>
-        <div class="skills">
-            <figure class="skill">
-                <img src="assets/music.png" alt="Icono de Música">
-                <figcaption>Oír música</figcaption>
-            </figure>
+    <section id="hobbies" class="habilidades padding__lados">
+        <h2 class="">Aficiones</h2><br>
+        <ul class="skills">
+            <li class="skill">
+                <figure>
+                    <img src="assets/music.png" alt="Icono de Música">
+                    <figcaption>Oír música</figcaption>
+                </figure>
+            </li>
 
-            <figure class="skill">
-                <img src="assets/tv_icon.png" alt="Icono de Películas">
-                <figcaption>Ver series</figcaption>
-            </figure>
+            <li class="skill">
+                <figure>
+                    <img src="assets/tv_icon.png" alt="Icono de Películas">
+                    <figcaption>Ver series</figcaption>
+                </figure>
+            </li>
+            <li class="skill">
+                <figure>
+                    <img src="assets/cocinar.png" alt="Icono de Cocinar">
+                    <figcaption>Cocinar</figcaption>
+                </figure>
+            </li>
 
-            <figure class="skill">
-                <img src="assets/cocinar.png" alt="Icono de Cocinar">
-                <figcaption>Cocinar</figcaption>
-            </figure>
+            <li class="skill">
+                <figure>
+                    <img src="assets/dibujo.png" alt="Icono de Dibujar">
+                    <figcaption>Dibujar</figcaption>
+                </figure>
+            </li>
 
-            <figure class="skill">
-                <img src="assets/dibujo.png" alt="Icono de Dibujar">
-                <figcaption>Dibujar</figcaption>
-            </figure>
+            <li class="skill">
+                <figure>
+                    <img src="assets/juego-movil.png" alt="Icono de Videojuegos">
+                    <figcaption>Videojuegos</figcaption>
+                </figure>
+            </li>
 
-            <figure class="skill">
-                <img src="assets/juego-movil.png" alt="Icono de Videojuegos">
-                <figcaption>Videojuegos</figcaption>
-            </figure>
-
-            <figure class="skill">
-                <img src="assets/caminar.png" alt="Icono de Caminar">
-                <figcaption>Paseos</figcaption>
-            </figure>
-        </div>
+            <li class="skill">
+                <figure>
+                    <img src="assets/caminar.png" alt="Icono de Caminar">
+                    <figcaption>Paseos</figcaption>
+                </figure>
+            </li>
+        </ul>
     </section>
 
     <!-- Sección de formación académica -->
-    <section id="formacion" class="habilidades margin__top__bottom padding__lados">
-        <h2 class="margin__top__bottom">Formación académica</h2>
+    <section id="formacion" class="habilidades padding__lados"><br>
+        <h2 class="">Formación académica</h2><br>
         <div class="skills estudios">
             <figure class="estudio">
-                <img src="assets/udenar.png" alt="Logo Universidad de Nariño">
+                <img class="estudio__img" src="assets/udenar.png" alt="Logo Universidad de Nariño">
                 <figcaption>
                     <h3>Ingeniería de Sistemas</h3>
                     <p>Universidad de Nariño <br>2017 - 2023</p>
@@ -233,7 +250,7 @@
             </figure>
 
             <figure class="estudio">
-                <img src="assets/udenar.png" alt="Logo Universidad de Nariño">
+                <img class="estudio__img" src="assets/udenar.png" alt="Logo Universidad de Nariño">
                 <figcaption>
                     <h3>Diplomado en Desarrollo de Software</h3>
                     <p>Universidad de Nariño <br>2023</p>
@@ -241,7 +258,7 @@
             </figure>
 
             <figure class="estudio">
-                <img src="assets/Alura.png" alt="Logo Alura">
+                <img class="estudio__img" src="assets/Alura.png" alt="Logo Alura">
                 <figcaption>
                     <h3>Formación en Front-End</h3>
                     <p>Alura <br>2024</p>
@@ -249,10 +266,10 @@
             </figure>
         </div>
     </section>
-
+    <hr>
     <!-- Sección de proyectos -->
-    <section id="proyectos" class="habilidades margin__top__bottom padding__lados">
-        <h2 class="margin__top__bottom">Experiencia en Proyectos</h2>
+    <section id="proyectos" class="proyectos  padding__lados">
+        <h2 class="">Experiencia en Proyectos</h2>
         <div class="proyectos__container">
             <article class="proyecto">
                 <img class="proyecto__img" src="assets/cap_bbbar.png" alt="Vista previa del proyecto BlueBull Bar">
@@ -309,7 +326,7 @@
     <br>
 
     <!-- Seccion gormulario de contacto -->
-    <section id="contacto" class="padding__lados margin__top__bottom">
+    <section id="contacto" class="padding__lados contact">
 
         <div class="contacto">
             <div class="contacto__img column">
@@ -317,9 +334,23 @@
             </div>
             <div class="column">
                 <h1>Contacto</h1><br>
-                <p>¿Quieres contactarme? <br>Complete el siguiente formulario y me pondré en contacto con usted lo antes
-                    posible.</p><br>
-                <form method="post">
+                <p>¿Quieres contactarme? <br>Complete el siguiente formulario y me pondré en contacto contigo lo antes
+                    posible. O déjame un mensaje a correo o whatsapp:</p>
+                <ul>
+                    <li class="email"><strong>Email:</strong><a class="datos_copiar"
+                            href="mailto:santiagocoral80@gmail.com">santiagocoral80@gmail.com</a>
+                        <button class="btn_copiar" id="botonCopiar_email"
+                            onclick="copiar('santiagocoral80@gmail.com')"><img src="assets/copy.svg" alt="Copiar"
+                                style="width: 16px; height: 16px;">Copiar</button>
+                    </li>
+                    <li><strong>Teléfono:</strong> <a class="datos_copiar" id="botonCopiar_cel"
+                            href="tel:+573166542501">3166542501</a>&nbsp;<button class="btn_copiar"
+                            onclick="copiar('3166542501')"><img src="assets/copy.svg" alt="Copiar"
+                                style="width: 16px; height: 16px;">Copiar</button></li>
+                </ul>
+                <br>
+
+                <form method="" id="contactForm" onsubmit="enviar_mensaje(event);">
                     <div class="input-container">
                         <input type="text" id="nombre" name="nombre" placeholder="" required aria-label="Nombre"
                             onfocus="validar('nombre');" oninput="validar_formulario('nombre');">
@@ -364,6 +395,7 @@
 
     </footer>
 </body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 
 </html>
