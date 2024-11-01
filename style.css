@@ -1,0 +1,634 @@
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.padding__lados {
+    padding: 0 100px;
+}
+
+/* Seccion del logo y nombre */
+
+.cabecera {
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-de-fondo-menu);
+    height: 80px;
+}
+
+.cabecera__izq__row {
+    gap: 10px;
+    align-items: center;
+}
+
+.cabecera__logo {
+    width: 22px;
+    height: 22px;
+}
+
+.cabecera__titulo {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Seccion Menu */
+.navegacion__lista {
+    gap: 12px;
+}
+
+.navegacion__elemento {
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.navegacion__elemento__texto {
+    color: #464646;
+}
+
+.navegacion__elemento:hover {
+    background-color: #1692A9;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.navegacion__elemento:hover a {
+    color: #ffffff;
+}
+
+.navegacion__elemento__texto:focus,
+.mi-correo:focus {
+    outline: 3px solid #2a7ae4;
+    /* Color de tu elección para indicar foco */
+    border-radius: 3px;
+}
+
+.mi-correo {
+    display: none;
+}
+
+
+.banner {
+    padding-top: 80px;
+    background-image: url('assets/banner.png');
+    background-size: cover;
+}
+
+/* Seccion de presentacion */
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 0px;
+    gap: 32px;
+}
+
+.margin__top__bottom {
+    margin: 40px 0px;
+}
+
+.presentacion__foto {
+    border-radius: 1000px;
+}
+
+.presentacion__links {
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+}
+
+.presentacion__links a {
+    color: #000000;
+    background-color: #ffffff;
+    border: #1692A9 1px dotted;
+    width: 100px;
+    padding: 2px;
+    text-align: center;
+}
+
+.presentacion__links a:hover {
+    color: #000000;
+    background-color: #1692A9;
+    width: 100px;
+    padding: 2px;
+    text-align: center;
+}
+
+a:focus {
+    outline: 3px solid #2a7ae4;
+    /* Color de enfoque */
+    border-radius: 5px;
+}
+
+.datos_copiar {
+    position: relative;
+    cursor: pointer;
+    color: #092c8d;
+}
+
+.btn_copiar {
+    background-color: #1692A9;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_copiar:hover {
+    background-color: #092c8d;
+}
+
+
+/* Seccion de sobre mi */
+.sobre-mi {
+    background-color: #eaf2fd;
+    color: #464646;
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0px;
+    gap: 32px;
+    /* padding-top: 25px;
+    padding-bottom: 25px; */
+}
+
+.about,
+.datos-personales {
+    margin-bottom: 20px;
+}
+
+.datos-personales {
+    min-width: 250px;
+}
+
+/* Seccion de habilidades */
+.habilidades {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+
+.skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 30px 16px;
+}
+
+.skill {
+    background-color: #fff;
+    width: 175px;
+    height: 175px;
+    align-content: center;
+}
+
+.skill figcaption {
+    color: #333;
+}
+
+/* Seccion de formacion academica */
+
+.estudios {
+    gap: 50px;
+}
+
+.estudio img {
+    max-width: 225px;
+}
+
+/* Seccion de proyectos */
+
+.proyecto {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.invertido {
+    flex-direction: row-reverse;
+}
+
+.proyecto__img {
+    width: 50%;
+    height: auto;
+    border: #1692A9 solid 1px;
+    box-shadow: #35393a 15px 15px;
+}
+
+.proyecto__descripcion {
+    display: flex;
+    flex-direction: column;
+}
+
+.botones {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+}
+
+.btn_repositorio {
+    width: 108px;
+    height: 40px;
+    background-color: #fff;
+    color: #2a7ae4;
+    font-size: 14px;
+    border: 1px solid #2a7ae4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn_repositorio:hover,
+.btn_demo:hover {
+    background-color: #0a3275;
+    color: #fff;
+}
+
+
+.btn_demo {
+    width: 96px;
+    height: 40px;
+    background-color: #2a7ae4;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #2a7ae4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Seccion Contacto */
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contacto__img {
+    display: block;
+    align-content: center;
+    padding-right: 50px;
+}
+
+/* Estilos generales para el formulario */
+form {
+    max-width: 90%;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 25px 10px 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+label {
+    position: absolute;
+    top: 15px;
+    /* Coloca el label dentro del input */
+    left: 10px;
+    color: #a2a2a2;
+    font-size: 16px;
+    transition: 0.3s ease;
+    background: #ffffff;
+    /* Fondo para que se superponga al texto */
+    padding: 0 5px;
+    pointer-events: none;
+}
+
+/* Efecto cuando el input está en foco o tiene texto */
+input:focus+label,
+input:not(:placeholder-shown)+label,
+textarea:focus+label,
+textarea:not(:placeholder-shown)+label {
+    top: 5px;
+    /* Ajusta el label un poco más arriba */
+    font-size: 12px;
+    color: #2a7ae4;
+    /* Color cuando está enfocado */
+}
+
+.input_error {
+    font-size: 15px;
+    color: #ff0000;
+}
+
+.btn_enviar {
+    background-color: #2a7ae4;
+    width: 144px;
+    height: 51px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn_enviar:disabled {
+    background-color: #ccc;
+    cursor: auto;
+}
+
+/* Si el boton esta habilitado y se hace hover sobre el  */
+
+.btn_enviar:enabled:hover {
+    background-color: #1a4d8d;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    background-color: #fff;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+/* Para moviles maximo 360px de ancho */
+@media(max-width:360px) {
+
+    .padding__lados {
+        padding: 0px 16px;
+    }
+
+    .navegacion__lista li:not(:last-child) {
+        display: none;
+    }
+
+
+    .presentacion {
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 1px;
+    }
+
+    .presentacion__foto {
+        max-width: 100px;
+    }
+
+    .presentacion__links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .sobre-mi {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .skill {
+        width: 100px;
+        height: 90px;
+    }
+
+    .skill p {
+        margin: 0;
+    }
+
+    .estudio img {
+        max-width: 200px;
+    }
+
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyecto__img {
+        width: 250px;
+    }
+
+    .contacto__img {
+        display: none;
+    }
+}
+
+/* Para pantallas de moviles entre 360 y 480 */
+@media(min-width:360px) and (max-width:480px) {
+    .padding__lados {
+        padding: 0px 16px;
+    }
+
+    .navegacion__lista li:not(:last-child) {
+        display: none;
+    }
+
+    .presentacion {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 1px;
+    }
+
+    .presentacion__foto {
+        max-width: 100px;
+    }
+
+    .presentacion__links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .sobre-mi {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .skill {
+        width: 156px;
+        height: 118px;
+    }
+
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyecto__img {
+        width: 300px;
+    }
+
+    .contacto__img {
+        display: none;
+    }
+}
+
+
+/* Para tablets tamaño de pantalla entre 480px y 768px */
+@media(min-width:480px) and (max-width:767px) {
+    .padding__lados {
+        padding: 0px 32px;
+    }
+
+    .navegacion__lista li:not(:last-child) {
+        display: none;
+    }
+
+    .mi-correo {
+        display: block;
+    }
+
+    .presentacion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .presentacion__foto {
+        max-width: 120px;
+    }
+
+    .presentacion__links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+    }
+
+
+    .sobre-mi {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .skill {
+        width: 156px;
+        height: 118px;
+    }
+
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyecto__img {
+        width: 425px;
+    }
+
+    .contacto__img {
+        display: none;
+    }
+}
+
+@media(min-width:768px) and (max-width:800px) {
+    .padding__lados {
+        padding: 0px 32px;
+    }
+
+    .presentacion__foto {
+        max-width: 130px;
+    }
+
+    .presentacion__links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .sobre-mi {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto {
+        display: block;
+    }
+
+    .contacto__img {
+        display: none;
+    }
+}
+
+/* Para pantallas mayores a 768px Pcs */
+@media(min-width:800px) and (max-width:1000px) {
+    .padding__lados {
+        padding: 0px 64px;
+    }
+
+    .presentacion__foto {
+        max-width: 150px;
+    }
+
+    .presentacion__links {
+        gap: 5px;
+    }
+
+    .sobre-mi {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .skill {
+        width: 224px;
+        height: 118px;
+    }
+
+    .contacto__img {
+        display: block;
+    }
+}

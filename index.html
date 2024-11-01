@@ -6,11 +6,364 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portafolio</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <!-- Fuente del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    <!-- Menu principal -->
+    <header class="row cabecera padding__lados" role="banner">
+        <div class="column">
+            <div class="row cabecera__izq__row">
+                <img class="cabecera__logo" src="assets/vector.png" alt="Pequeño logo de la página">
+                <h2 class="cabecera__titulo">Santiago Coral</h2>
+            </div>
+        </div>
+        <nav class="column" role="navigation" aria-label="Navegación principal">
+            <ul class="row navegacion__lista">
+                <li class="navegacion__elemento">
+                    <a class="navegacion__elemento__texto" href="#sobreMi" aria-label="Sobre mí, sección">
+                        Sobre mí
+                    </a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__elemento__texto" href="#skills" aria-label="Habilidades o Skills">
+                        Skills
+                    </a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__elemento__texto" href="#hobbies" aria-label="Hobbies, sección">
+                        Hobbies
+                    </a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__elemento__texto" href="#formacion" aria-label="Formación académica">
+                        Formación
+                    </a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="navegacion__elemento__texto" href="#proyectos" aria-label="Proyectos">
+                        Proyectos
+                    </a>
+                </li>
+                <li class="navegacion__elemento">
+                    <a class="mi-correo navegacion__elemento__texto" href="mailto:santiagocoral80@gmail.com"
+                        aria-label="Correo electrónico">
+                        santiagocoral80@gmail.com
+                    </a>
+                    <a class="navegacion__elemento__texto" href="#contacto" aria-label="Contacto">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner" role="img" aria-label="Imagen de fondo del banner">&nbsp;</div>
 
+    <!-- Sección de presentación -->
+    <section class="presentacion padding__lados">
+        <div class="column">
+            <h1>Bienvenido a mi portafolio, soy Santiago Coral, desarrollador web</h1>
+            <p class="margin__top__bottom">Soy egresado de la Universidad de Nariño, apasionado por la programación y la
+                creación de contenido atractivo. Actualmente participo en el proyecto Oracle ONE de Alura Latam.</p>
+            <ul class="row presentacion__links">
+                <li class="column">
+                    <a href="https://github.com/SantiagoCoral09" target="_blank"
+                        aria-label="Perfil de GitHub de Santiago Coral">
+                        GitHub <img class="img__arrow" src="assets/arrow.png" alt="Enlace a GitHub">
+                    </a>
+                </li>
+                <li class="column">
+                    <a href="https://www.linkedin.com/in/santiago-alejandro-coral-ruano-004845257" target="_blank"
+                        aria-label="Perfil de LinkedIn de Santiago Coral">
+                        LinkedIn <img class="img__arrow" src="assets/arrow.png" alt="Enlace a LinkedIn">
+                    </a>
+                </li>
+                <li class="column">
+                    <a href="https://www.facebook.com/santiago.coral99/" target="_blank"
+                        aria-label="Perfil de Facebook de Santiago Coral">
+                        Facebook <img class="img__arrow" src="assets/arrow.png" alt="Enlace a Facebook">
+                    </a>
+                </li>
+                <li class="column">
+                    <a href="assets/CV_Santiago Coral.pdf" target="_blank"
+                        aria-label="Descargar el currículo de Santiago Coral">
+                        Currículo <img class="img__arrow" src="assets/arrow.png" alt="Descargar currículum">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="column presentacion__img">
+            <img class="presentacion__foto" src="assets/foto.png" alt="Foto de perfil de Santiago Coral">
+        </div>
+    </section>
+
+    <!-- Sección sobre mí -->
+    <section class="sobre-mi padding__lados" id="sobreMi">
+        <div class="column about margin__top__bottom">
+            <h2 class="">Sobre mí</h2>
+            <p>Ingeniero de sistemas egresado de la Universidad de Nariño con una pasión por la innovación y resolución
+                de problemas tecnológicos.
+                Busco una oportunidad laboral donde pueda aplicar los conocimientos adquiridos en mi formación
+                académica, además de mis habilidades en la planificación y desarrollo de proyectos de software.
+                Aspiro a superarme en los aspectos profesional, personal y laboral.</p>
+            <p>Me caracterizo por mi gusto por el aprendizaje, responsabilidad y paciencia. Soy hábil y disfruto de la
+                lógica y las matemáticas.</p>
+        </div>
+
+        <div class="column datos-personales margin__top__bottom">
+            <h2 class="">Datos Personales:</h2>
+            <address>
+                <ul>
+                    <li><strong>Nombre:</strong> Santiago Alejandro Coral Ruano</li>
+                    <li><strong>Ubicación:</strong> Potosí, Nariño, Colombia</li>
+                    <li><strong>Fecha de nacimiento:</strong> 09/05/1999</li>
+                    <li><strong>Email:</strong> <a class="datos_copiar"
+                            href="mailto:santiagocoral80@gmail.com">santiagocoral80@gmail.com</a>&nbsp;
+                        <button class="btn_copiar" id="botonCopiar_email"
+                            onclick="copiar('santiagocoral80@gmail.com')"><img src="assets/copy.svg" alt="Copiar"
+                                style="width: 16px; height: 16px;"></button>
+                    </li>
+                    <li><strong>Teléfono:</strong> <a class="datos_copiar" id="botonCopiar_cel"
+                            href="tel:+573166542501">3166542501</a>&nbsp;<button class="btn_copiar"
+                            onclick="copiar('3166542501')"><img src="assets/copy.svg" alt="Copiar"
+                                style="width: 16px; height: 16px;"></button></li>
+                </ul>
+            </address>
+        </div>
+    </section>
+
+    <!-- Sección de habilidades: Skills -->
+    <section id="skills" class="habilidades margin__top__bottom padding__lados">
+        <h2 class="margin__top__bottom">Habilidades</h2>
+        <ul class="skills">
+            <li class="skill">
+                <figure>
+                    <img src="assets/htlm.png" alt="Icono de HTML">
+                    <figcaption>HTML</figcaption>
+                </figure>
+            </li>
+
+            <li class="skill">
+                <figure>
+                    <img src="assets/js_icon.png" alt="Icono de Javascript">
+                    <figcaption>Javascript</figcaption>
+                </figure>
+            </li>
+
+            <li class="skill">
+                <figure>
+                    <img src="assets/php_icon.png" alt="Icono de PHP">
+                    <figcaption>PHP</figcaption>
+                </figure>
+            </li>
+
+            <li class="skill">
+                <figure>
+                    <img src="assets/nodejs_icon.png" alt="Icono de NodeJS">
+                    <figcaption>NodeJs</figcaption>
+                </figure>
+            </li>
+
+            <li class="skill">
+                <figure>
+                    <img src="assets/python.png" alt="Icono de Python">
+                    <figcaption>Python</figcaption>
+                </figure>
+            </li>
+
+            <li class="skill">
+                <figure>
+                    <img src="assets/flask.png" alt="Icono de Flask">
+                    <figcaption>Flask</figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de hobbies, pasatiempos, aficiones -->
+    <section id="hobbies" class="habilidades margin__top__bottom padding__lados">
+        <h2 class="margin__top__bottom">Aficiones</h2>
+        <div class="skills">
+            <figure class="skill">
+                <img src="assets/music.png" alt="Icono de Música">
+                <figcaption>Oír música</figcaption>
+            </figure>
+
+            <figure class="skill">
+                <img src="assets/tv_icon.png" alt="Icono de Películas">
+                <figcaption>Ver series</figcaption>
+            </figure>
+
+            <figure class="skill">
+                <img src="assets/cocinar.png" alt="Icono de Cocinar">
+                <figcaption>Cocinar</figcaption>
+            </figure>
+
+            <figure class="skill">
+                <img src="assets/dibujo.png" alt="Icono de Dibujar">
+                <figcaption>Dibujar</figcaption>
+            </figure>
+
+            <figure class="skill">
+                <img src="assets/juego-movil.png" alt="Icono de Videojuegos">
+                <figcaption>Videojuegos</figcaption>
+            </figure>
+
+            <figure class="skill">
+                <img src="assets/caminar.png" alt="Icono de Caminar">
+                <figcaption>Paseos</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Sección de formación académica -->
+    <section id="formacion" class="habilidades margin__top__bottom padding__lados">
+        <h2 class="margin__top__bottom">Formación académica</h2>
+        <div class="skills estudios">
+            <figure class="estudio">
+                <img src="assets/udenar.png" alt="Logo Universidad de Nariño">
+                <figcaption>
+                    <h3>Ingeniería de Sistemas</h3>
+                    <p>Universidad de Nariño <br>2017 - 2023</p>
+                </figcaption>
+            </figure>
+
+            <figure class="estudio">
+                <img src="assets/udenar.png" alt="Logo Universidad de Nariño">
+                <figcaption>
+                    <h3>Diplomado en Desarrollo de Software</h3>
+                    <p>Universidad de Nariño <br>2023</p>
+                </figcaption>
+            </figure>
+
+            <figure class="estudio">
+                <img src="assets/Alura.png" alt="Logo Alura">
+                <figcaption>
+                    <h3>Formación en Front-End</h3>
+                    <p>Alura <br>2024</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section id="proyectos" class="habilidades margin__top__bottom padding__lados">
+        <h2 class="margin__top__bottom">Experiencia en Proyectos</h2>
+        <div class="proyectos__container">
+            <article class="proyecto">
+                <img class="proyecto__img" src="assets/cap_bbbar.png" alt="Vista previa del proyecto BlueBull Bar">
+                <div class="proyecto__descripcion">
+                    <h3>Proyecto BlueBull Bar</h3>
+                    <p>Página web para un Restaurante-Bar con carrito de compras realizado con <strong>Python</strong> y
+                        <strong>Flask</strong> haciendo uso de Blueprints, Internacionalización, Flask-Mail y SQLite.
+                    </p>
+                    <ul class="botones">
+                        <li><a class="btn_repositorio" href="https://github.com/SantiagoCoral09/BlueBullBar.git"
+                                target="_blank" rel="noopener noreferrer">Repositorio</a></li>
+                        <li><a class="btn_demo" href="https://bluebullbar.onrender.com" target="_blank"
+                                rel="noopener noreferrer">Ver Demo</a></li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="proyecto invertido">
+                <img class="proyecto__img" src="assets/cap_econcreto.png"
+                    alt="Vista previa del proyecto Estructuras de Concreto">
+                <div class="proyecto__descripcion">
+                    <h3>Proyecto Estructuras de Concreto</h3>
+                    <p>Página web de cálculo de vigas y columnas para ingeniería civil, con información sobre pórticos
+                        de concreto, normas y su calculadora. Hecho con <strong>Javascript</strong>,
+                        <strong>HTML</strong> y <strong>CSS</strong>.
+                    </p>
+                    <ul class="botones">
+                        <li><a class="btn_repositorio" href="https://github.com/SantiagoCoral09/calculoVigas.git"
+                                target="_blank" rel="noopener noreferrer">Repositorio</a></li>
+                        <li><a class="btn_demo" href="https://santiagocoral09.github.io/calculoVigas/" target="_blank"
+                                rel="noopener noreferrer">Ver Demo</a></li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="proyecto">
+                <img class="proyecto__img" src="assets/cap_enc.png"
+                    alt="Vista previa del proyecto Encriptador de texto">
+                <div class="proyecto__descripcion">
+                    <h3>Proyecto Encriptador de texto</h3>
+                    <p>App que encripta información realizado con <strong>HTML</strong>, <strong>CSS</strong> y
+                        <strong>Javascript</strong>.
+                    </p>
+                    <ul class="botones">
+                        <li><a class="btn_repositorio" href="https://github.com/SantiagoCoral09/encriptador_texto.git"
+                                target="_blank" rel="noopener noreferrer">Repositorio</a></li>
+                        <li><a class="btn_demo" href="https://santiagocoral09.github.io/encriptador_texto/"
+                                target="_blank" rel="noopener noreferrer">Ver Demo</a></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+    <br>
+
+    <!-- Seccion gormulario de contacto -->
+    <section id="contacto" class="padding__lados margin__top__bottom">
+
+        <div class="contacto">
+            <div class="contacto__img column">
+                <img src="assets/contacto.png" alt="Imagen logo de contacto">
+            </div>
+            <div class="column">
+                <h1>Contacto</h1><br>
+                <p>¿Quieres contactarme? <br>Complete el siguiente formulario y me pondré en contacto con usted lo antes
+                    posible.</p><br>
+                <form method="post">
+                    <div class="input-container">
+                        <input type="text" id="nombre" name="nombre" placeholder="" required aria-label="Nombre"
+                            onfocus="validar('nombre');" oninput="validar_formulario('nombre');">
+                        <label for="nombre">Nombre</label>
+                        <span id="nombre_error" class="input_error">
+                        </span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" placeholder="" required aria-label="Email"
+                            onfocus="validar('email');" oninput="validar_formulario('email');">
+                        <label for="email">E-mail</label>
+                        <span id="email_error" class="input_error"></span>
+
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="asunto" name="asunto" placeholder="" required aria-label="Asunto"
+                            onfocus="validar('asunto');" oninput="validar_formulario('asunto');">
+                        <label for="asunto">Asunto</label>
+                        <span id="asunto_error" class="input_error"></span>
+
+                    </div>
+                    <div class="input-container">
+                        <textarea id="mensaje" name="mensaje" placeholder="" required aria-label="Mensaje"
+                            onfocus="validar('mensaje');" oninput="validar_formulario('mensaje');"></textarea>
+                        <label for="mensaje">Mensaje</label>
+                        <span id="mensaje_error" class="input_error"></span>
+
+                    </div>
+                    <button class="btn_enviar" id="enviar" type="submit" disabled onclick="enviar_mensaje();"
+                        aria-label="Enviar Mensaje">Enviar
+                        mensaje</button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; Desarrollado por Santiago Coral</p>
+        <p>2024</p>
+
+    </footer>
 </body>
+<script src="script.js"></script>
 
 </html>
