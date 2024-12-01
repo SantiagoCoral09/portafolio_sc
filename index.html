@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portafolio</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 
@@ -19,15 +19,15 @@
 
 <body>
     <!-- Menu principal -->
-    <header class="row cabecera padding__lados" role="banner">
-        <div class="column">
-            <div class="row cabecera__izq__row">
+    <header class="cabecera" role="banner">
+        <div class="cabecera__inicio">
+            <div class=" cabecera__izq__row">
                 <img class="cabecera__logo" src="assets/vector.png" alt="Pequeño logo de la página">
                 <h2 class="cabecera__titulo">Santiago Coral</h2>
             </div>
         </div>
-        <nav class="column" role="navigation" aria-label="Navegación principal">
-            <ul class="row navegacion__lista">
+        <nav class=" " role="navigation" aria-label="Navegación principal">
+            <ul class="navegacion__lista">
                 <li class="navegacion__elemento">
                     <a class="navegacion__elemento__texto" href="#sobreMi" aria-label="Sobre mí, sección">
                         Sobre mí
@@ -54,10 +54,6 @@
                     </a>
                 </li>
                 <li class="navegacion__elemento">
-                    <a class="mi-correo navegacion__elemento__texto" href="mailto:santiagocoral80@gmail.com"
-                        aria-label="Correo electrónico">
-                        santiagocoral80@gmail.com
-                    </a>
                     <a class="navegacion__elemento__texto" href="#contacto" aria-label="Contacto">
                         Contacto
                     </a>
@@ -65,62 +61,75 @@
             </ul>
         </nav>
     </header>
+
     <div class="banner" role="img" aria-label="Imagen de fondo del banner">&nbsp;</div>
 
     <!-- Sección de presentación -->
-    <section class="presentacion padding__lados">
-        <div class="column presentacion__info"><br>
-            <h1>Bienvenido a mi portafolio, soy Santiago Coral, desarrollador web</h1><br>
-            <p class="">Soy egresado de la Universidad de Nariño, apasionado por la programación y la
-                creación de contenido atractivo. Actualmente participo en el proyecto Oracle ONE de Alura Latam.</p><br>
-            <ul class="row presentacion__links">
-                <li class="column">
+    <section class="presentacion">
+        <div class="presentacion__info">
+            <h1 class="presentacion__titulo">Bienvenido a mi portafolio, soy Santiago Coral, ingeniero de sistemas.</h1>
+            <p class="presentacion__descripcion">Soy egresado de la Universidad de Nariño, apasionado por la
+                programación y el desarrollo de soluciones digitales innovadoras.</p>
+            <ul class=" presentacion__links">
+                <li class="presentacion__link-item">
                     <a href="https://github.com/SantiagoCoral09" target="_blank"
-                        aria-label="Perfil de GitHub de Santiago Coral">
+                        aria-label="Perfil de GitHub de Santiago Coral" class="presentacion__link">
                         GitHub <img class="img__arrow" src="assets/arrow.png" alt="Enlace a GitHub">
                     </a>
                 </li>
-                <li class="column">
+                <li class="presentacion__link-item">
                     <a href="https://www.linkedin.com/in/santiago-alejandro-coral-ruano-004845257" target="_blank"
-                        aria-label="Perfil de LinkedIn de Santiago Coral">
+                        aria-label="Perfil de LinkedIn de Santiago Coral" class="presentacion__link">
                         LinkedIn <img class="img__arrow" src="assets/arrow.png" alt="Enlace a LinkedIn">
                     </a>
                 </li>
-                <li class="column">
-                    <a href="https://www.facebook.com/santiago.coral99/" target="_blank"
-                        aria-label="Perfil de Facebook de Santiago Coral">
-                        Facebook <img class="img__arrow" src="assets/arrow.png" alt="Enlace a Facebook">
-                    </a>
-                </li>
-                <li class="column">
+
+                <li class="presentacion__link-item">
                     <a href="assets/CV_Santiago Coral.pdf" target="_blank"
-                        aria-label="Descargar el currículo de Santiago Coral">
+                        aria-label="Descargar el currículo de Santiago Coral" class="presentacion__link">
                         Currículo <img class="img__arrow" src="assets/arrow.png" alt="Descargar currículum">
                     </a>
                 </li>
             </ul>
         </div>
-        <div class="column presentacion__img">
+        <div class="presentacion__img">
             <img class="presentacion__foto" src="assets/foto.png" alt="Foto de perfil de Santiago Coral">
         </div>
     </section>
 
     <!-- Sección sobre mí -->
-    <section class="sobre-mi padding__lados" id="sobreMi">
-        <div class="column about">
-            <h2 class="">Sobre mí</h2><br>
-            <p>Ingeniero de sistemas egresado de la Universidad de Nariño con una pasión por la innovación y resolución
-                de problemas tecnológicos.
-                Busco una oportunidad laboral donde pueda aplicar los conocimientos adquiridos en mi formación
-                académica, además de mis habilidades en la planificación y desarrollo de proyectos de software.
-                Aspiro a superarme en los aspectos profesional, personal y laboral.</p>
-            <p>Me caracterizo por mi gusto por el aprendizaje, responsabilidad y paciencia. Soy hábil y disfruto de la
-                lógica y las matemáticas.</p>
+    <section class="sobre-mi padding__lados animar" id="sobreMi">
+        <div class="about">
+            <h2 class="titulo">Sobre mí</h2>
+            <p class="descripcion">Mi pasión por el desarrollo de software me impulsa a crear soluciones digitales
+                eficientes que no solo
+                resuelvan problemas, sino que también mejoren la experiencia del usuario. Estoy convencido de que la
+                tecnología puede transformar vidas, y me esfuerzo por contribuir a ese cambio a través de mi trabajo. A
+                lo largo de mi formación académica, he trabajado en diversos proyectos, como el desarrollo de páginas
+                web para tiendas o restaurantes, donde he podido aplicar mi creatividad y adquirir conocimientos con
+                Python, Angular, NodeJs, entre otros.
+            </p>
+            <p class="descripcion">Me considero una persona curiosa, paciente, responsable y planificadora, siempre en
+                busca de aprender
+                nuevas habilidades y explorar tecnologías emergentes. La lógica y las matemáticas son mis aliadas en la
+                resolución de problemas, y estoy siempre dispuesto a enfrentar nuevos desafíos que me permitan superar
+                mis propias limitaciones,
+                tanto a nivel personal como profesional.
+            </p>
+            <p class="descripcion">Fuera del ámbito académico y profesional, disfruto de actividades que me permitan
+                desconectar de la
+                rutina, como salir a pasear, dibujar o escuchar música.
+            </p>
+            <p class="descripcion">Estoy entusiasmado por seguir aprendiendo y creciendo en el mundo del desarrollo de
+                software. Espero con
+                ansias las oportunidades laborales que me permitan aplicar mis habilidades y conocimientos, al mismo
+                tiempo que contribuyo al éxito de proyectos innovadores.
+            </p>
         </div>
 
-        <div class="column datos-personales" id="datos">
+        <div class="datos-personales" id="datos">
             <div class="datos-personales-container">
-                <h2 class="">Datos Personales:</h2>
+                <h2 class="titulo">Datos Personales:</h2>
                 <address>
                     <ul>
                         <li><strong>Nombre:</strong> Santiago Alejandro Coral Ruano</li>
@@ -142,95 +151,86 @@
         </div>
     </section>
 
-    <!-- Sección de habilidades: Skills -->
-    <section id="skills" class="habilidades  padding__lados">
-        <h2 class="">Habilidades</h2><br>
+    <!-- Sección de habilidades -->
+    <section id="skills" class="habilidades padding__lados animar">
+        <h2 class="titulo">Habilidades</h2>
         <ul class="skills">
             <li class="skill">
                 <figure>
-                    <img src="assets/htlm.png" alt="Icono de HTML">
+                    <img src="assets/htlm.png" alt="Icono de HTML" class="icono-habilidad">
                     <figcaption>HTML</figcaption>
                 </figure>
             </li>
-
             <li class="skill">
                 <figure>
-                    <img src="assets/js_icon.png" alt="Icono de Javascript">
+                    <img src="assets/js_icon.png" alt="Icono de Javascript" class="icono-habilidad">
                     <figcaption>Javascript</figcaption>
                 </figure>
             </li>
-
             <li class="skill">
                 <figure>
-                    <img src="assets/php_icon.png" alt="Icono de PHP">
+                    <img src="assets/php_icon.png" alt="Icono de PHP" class="icono-habilidad">
                     <figcaption>PHP</figcaption>
                 </figure>
             </li>
-
             <li class="skill">
                 <figure>
-                    <img src="assets/nodejs_icon.png" alt="Icono de NodeJS">
+                    <img src="assets/nodejs_icon.png" alt="Icono de NodeJS" class="icono-habilidad">
                     <figcaption>NodeJs</figcaption>
                 </figure>
             </li>
-
             <li class="skill">
                 <figure>
-                    <img src="assets/python.png" alt="Icono de Python">
+                    <img src="assets/python.png" alt="Icono de Python" class="icono-habilidad">
                     <figcaption>Python</figcaption>
                 </figure>
             </li>
-
             <li class="skill">
                 <figure>
-                    <img src="assets/flask.png" alt="Icono de Flask">
+                    <img src="assets/flask.png" alt="Icono de Flask" class="icono-habilidad">
                     <figcaption>Flask</figcaption>
                 </figure>
             </li>
         </ul>
     </section>
 
-    <!-- Sección de hobbies, pasatiempos, aficiones -->
-    <section id="hobbies" class="habilidades padding__lados">
-        <h2 class="">Aficiones</h2><br>
-        <ul class="skills">
-            <li class="skill">
+    <!-- Sección de pasatiempos -->
+    <section id="hobbies" class="pasatiempos padding__lados animar">
+        <h2 class="titulo">Pasatiempos</h2>
+        <ul class="hobbies-list">
+            <li class="hobby">
                 <figure>
-                    <img src="assets/music.png" alt="Icono de Música">
+                    <img src="assets/music.png" alt="Icono de Música" class="icono-pasatiempo">
                     <figcaption>Oír música</figcaption>
                 </figure>
             </li>
-
-            <li class="skill">
+            <li class="hobby">
                 <figure>
-                    <img src="assets/tv_icon.png" alt="Icono de Películas">
+                    <img src="assets/tv_icon.png" alt="Icono de Películas" class="icono-pasatiempo">
                     <figcaption>Ver series</figcaption>
                 </figure>
             </li>
-            <li class="skill">
+            <li class="hobby">
                 <figure>
-                    <img src="assets/cocinar.png" alt="Icono de Cocinar">
+                    <img src="assets/cocinar.png" alt="Icono de Cocinar" class="icono-pasatiempo">
                     <figcaption>Cocinar</figcaption>
                 </figure>
             </li>
-
-            <li class="skill">
+            <li class="hobby">
                 <figure>
-                    <img src="assets/dibujo.png" alt="Icono de Dibujar">
+                    <img src="assets/dibujo.png" alt="Icono de Dibujar" class="icono-pasatiempo">
                     <figcaption>Dibujar</figcaption>
                 </figure>
             </li>
-
-            <li class="skill">
+            <li class="hobby">
                 <figure>
-                    <img src="assets/juego-movil.png" alt="Icono de Videojuegos">
+                    <img src="assets/juego-movil.png" alt="Icono de Videojuegos" class="icono-pasatiempo">
                     <figcaption>Videojuegos</figcaption>
                 </figure>
             </li>
-
-            <li class="skill">
+            <li class="hobby">
                 <figure>
-                    <img src="assets/caminar.png" alt="Icono de Caminar">
+                    <img src="assets/caminar.png" alt="Icono de Caminar" class="icono-pasatiempo">
                     <figcaption>Paseos</figcaption>
                 </figure>
             </li>
@@ -238,11 +238,11 @@
     </section>
 
     <!-- Sección de formación académica -->
-    <section id="formacion" class="habilidades padding__lados"><br>
-        <h2 class="">Formación académica</h2><br>
+    <section id="formacion" class="formacion-academica padding__lados animar">
+        <h2 class="titulo">Formación Académica</h2>
         <div class="skills estudios">
             <figure class="estudio">
-                <img class="estudio__img" src="assets/udenar.png" alt="Logo Universidad de Nariño">
+                <img class="estudio__img filter" src="assets/udenar.png" alt="Logo Universidad de Nariño">
                 <figcaption>
                     <h3>Ingeniería de Sistemas</h3>
                     <p>Universidad de Nariño <br>2017 - 2023</p>
@@ -250,7 +250,7 @@
             </figure>
 
             <figure class="estudio">
-                <img class="estudio__img" src="assets/udenar.png" alt="Logo Universidad de Nariño">
+                <img class="estudio__img filter" src="assets/udenar.png" alt="Logo Universidad de Nariño">
                 <figcaption>
                     <h3>Diplomado en Desarrollo de Software</h3>
                     <p>Universidad de Nariño <br>2023</p>
@@ -266,10 +266,9 @@
             </figure>
         </div>
     </section>
-    <hr>
     <!-- Sección de proyectos -->
-    <section id="proyectos" class="proyectos  padding__lados">
-        <h2 class="">Experiencia en Proyectos</h2>
+    <section id="proyectos" class="proyectos  ">
+        <h2 class="titulo">Proyectos</h2>
         <div class="proyectos__container">
             <article class="proyecto">
                 <img class="proyecto__img" src="assets/cap_bbbar.png" alt="Vista previa del proyecto BlueBull Bar">
@@ -292,7 +291,7 @@
                     alt="Vista previa del proyecto Estructuras de Concreto">
                 <div class="proyecto__descripcion">
                     <h3>Proyecto Estructuras de Concreto</h3>
-                    <p>Página web de cálculo de vigas y columnas para ingeniería civil, con información sobre pórticos
+                    <p>Página web de cálculo de vigas y as para ingeniería civil, con información sobre pórticos
                         de concreto, normas y su calculadora. Hecho con <strong>Javascript</strong>,
                         <strong>HTML</strong> y <strong>CSS</strong>.
                     </p>
@@ -325,28 +324,29 @@
     </section>
     <br>
 
-    <!-- Seccion gormulario de contacto -->
-    <section id="contacto" class="padding__lados contact">
+    <!-- Seccion formulario de contacto -->
+    <section id="contacto" class=" contact">
 
         <div class="contacto">
-            <div class="contacto__img column">
+            <div class="contacto__img  ">
                 <img src="assets/contacto.png" alt="Imagen logo de contacto">
             </div>
-            <div class="column">
+            <div class=" ">
                 <h1>Contacto</h1><br>
                 <p>¿Quieres contactarme? <br>Complete el siguiente formulario y me pondré en contacto contigo lo antes
-                    posible. O déjame un mensaje a correo o whatsapp:</p>
+                    posible. O déjame un mensaje a correo o whatsapp:</p><br>
                 <ul>
                     <li class="email"><strong>Email:</strong><a class="datos_copiar"
                             href="mailto:santiagocoral80@gmail.com">santiagocoral80@gmail.com</a>
                         <button class="btn_copiar" id="botonCopiar_email"
                             onclick="copiar('santiagocoral80@gmail.com')"><img src="assets/copy.svg" alt="Copiar"
-                                style="width: 16px; height: 16px;">Copiar</button>
+                                style="width: 16px; height: 16px;"></button>
                     </li>
+                    <li><br></li>
                     <li><strong>Teléfono:</strong> <a class="datos_copiar" id="botonCopiar_cel"
                             href="tel:+573166542501">3166542501</a>&nbsp;<button class="btn_copiar"
                             onclick="copiar('3166542501')"><img src="assets/copy.svg" alt="Copiar"
-                                style="width: 16px; height: 16px;">Copiar</button></li>
+                                style="width: 16px; height: 16px;"></button></li>
                 </ul>
                 <br>
 
@@ -389,11 +389,26 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; Desarrollado por Santiago Coral</p>
-        <p>2024</p>
+    <footer class="footer padding__lados">
+        <div class="footer__contenido">
+            <p>&copy; 2023 Santiago Coral.</p>
+            <p>Todos los derechos reservados.</p>
+            <div class="footer__redes">
+                <a href="https://github.com/SantiagoCoral09" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/github.png" alt="GitHub" class="footer__icono">
+                </a>
+                <a href="https://www.linkedin.com/in/santiago-alejandro-coral-ruano-004845257
 
+" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/linkedin.png" alt="LinkedIn" class="footer__icono">
+                </a>
+                <a href="https://www.facebook.com/santiago.coral99/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/facebook.png" alt="Facebook" class="footer__icono">
+                </a>
+            </div>
+        </div>
     </footer>
+
 </body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>

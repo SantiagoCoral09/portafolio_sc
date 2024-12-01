@@ -181,14 +181,28 @@ function copiar(resultado) {
     alert("Se copió " + resultado);
 }
 
-const elements = document.querySelectorAll('.sobre-mi, .habilidades, .proyecto, .contact');
+
+
+// Selecciona las secciones que deseas animar
+const sections = document.querySelectorAll('.cabecera, .banner, .presentacion, .sobre-mi, .datos-personales, .skills, .pasatiempos, .formacion, .proyecto, .contact, .footer');
+
+// Función para manejar la entrada de las secciones en la vista
+const observerOptions = {
+    root: null, // Usar el viewport como raíz
+    rootMargin: '0px',
+    threshold: 0.1 // Cuando el 10% del elemento es visible
+};
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
+            entry.target.classList.add('in-view'); // Agrega la clase de animación
+            observer.unobserve(entry.target); // Deja de observar el elemento
         }
     });
-});
+}, observerOptions);
 
-elements.forEach(element => observer.observe(element));
+// Observa cada sección
+sections.forEach(section => {
+    observer.observe(section);
+});
